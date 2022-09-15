@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import ItemList from '../ItemList';
-import data from '../mockData'
+import ItemList from '../ItemList/index';
+import {data} from '../mockData';
 
 export function ItemListContainer (){
 
-    const [proudctList, setProductList] = useState([])
+    const [productList, setProductList] = useState([])
 
     useEffect(()=>{
         getProducts.then((response)=>{
@@ -20,7 +20,7 @@ export function ItemListContainer (){
         });
     
     return <>
-            <ItemList lista={proudctList}/>
+            <ItemList lista={productList}/>
            </>
     // <h1>{ greeting }</h1>
 }

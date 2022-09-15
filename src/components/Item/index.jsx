@@ -7,3 +7,5 @@ const Item = ({title, price, image}) =>{
             <h3>{price}</h3>            
         </div>);
 };
+
+export default Item;

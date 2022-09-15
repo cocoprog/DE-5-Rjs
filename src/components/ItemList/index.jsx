@@ -1,4 +1,4 @@
-import { Item } from "../Item";
+import Item from "../Item";
 
 const ItemList = ({lista}) =>{    
     return (
@@ -11,3 +11,5 @@ const ItemList = ({lista}) =>{
     </div>
     );
 };
+
+export default ItemList;
