@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import ItemList from '../ItemList/index';
-import {data} from '../mockData';
+import {data} from '../Data/index';
 
 export function ItemListContainer (){
 
@@ -11,7 +11,7 @@ export function ItemListContainer (){
             setProductList(response);
         })
         .catch(error => console.log(error));
-    }, []);
+    },[]);
     
     const getProducts = new Promise ((resolve, reject) => {
         setTimeout(() => {
